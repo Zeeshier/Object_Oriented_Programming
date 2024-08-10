@@ -1,0 +1,30 @@
+class Vehicle {
+    String color;
+    int maxSpeed;
+
+    Vehicle(String color, int maxSpeed) {
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+    }
+}
+
+class Car extends Vehicle {
+    int numDoors;
+    String transmissionType;
+
+    Car(String color, int maxSpeed, int numDoors, String transmissionType) {
+        super(color, maxSpeed);
+        this.numDoors = numDoors;
+        this.transmissionType = transmissionType;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car("Red", 120, 4, "Automatic");
+        System.out.println("Color: " + car.color);
+        System.out.println("Max Speed: " + car.maxSpeed);
+        System.out.println("Number of Doors: " + car.numDoors);
+        System.out.println("Transmission Type: " + car.transmissionType);
+    }
+}
