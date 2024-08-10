@@ -1,3 +1,4 @@
+
 abstract class Employee {
     String name;
     double salary;
